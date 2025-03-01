@@ -1,0 +1,132 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364),
+    url("https://i.pinimg.com/736x/3e/97/54/3e97542e2c6499d0a9bddd282fd26695.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-blend-mode:multiply ;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background: linear-gradient(45deg, #005c48, #2575fc);
+  color: white;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border-bottom: 4px solid #1e3c72;
+  border-radius: 0 0 15px 15px;
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  min-height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box; 
+}
+/* Container Styling */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  width: 90%; /* More responsive */
+  text-align: center; /* Aligns content */
+  margin: 100px auto 0; /* Centers horizontally, adds top spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers everything */
+}
+
+/* Heading */
+h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* File Input */
+input[type="file"] {
+  width: 80%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Upload Button */
+button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: 0.3s;
+  width: fit-content;
+}
+
+button:hover {
+  background: #e68900;
+}
+
+/* Result Text */
+#result {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Image Preview */
+#image-preview {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 2px dashed #ccc;
+  display: none;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  input[type="file"],
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #image-preview {
+    width: 180px;
+    height: 180px;
+  }
+}
