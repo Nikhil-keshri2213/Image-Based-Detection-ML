@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script defer src="static/script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+        <h1><i class="ri-video-on-ai-line"></i> Image-Based Recognition.</h1>
+    </div>
+    
+    <div class="container">
+        <h2>Upload an Image for Classification</h2>
+        <input type="file" id="imageInput" accept="image/*">
+        <br>
+        <img id="image-preview" alt="Image Preview">
+        <br>
+        <button onclick="uploadImage()">Classify</button>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
